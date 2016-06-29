@@ -88,9 +88,9 @@ $(document).ready(function () {
         warn: function(msg) { customLog(msg) }
     }*/
 
-    if ((top.location.origin.indexOf("localhost") < 0 && (top.location.origin.indexOf("staging") < 0) && top.location.origin.indexOf("vault.local") < 0) && document.referrer === "") {
+    /*if ((top.location.origin.indexOf("localhost") < 0 && (top.location.origin.indexOf("staging") < 0) && top.location.origin.indexOf("vault.local") < 0) && document.referrer === "") {
         location.href="http://wallet.ribbit.me"
-    }
+    }*/
     if (verbose) console.log(document.referrer)
     renderSplashScreenContent({})
     handleSettings(function ()  {
