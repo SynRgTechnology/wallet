@@ -1616,7 +1616,7 @@ function bindClicks() {
             $(previouslySelected).insertBefore($(this).parent())
         }
         $(".accountInHeadBalance ").text($(this).find(".accountInPickerBalance").text())
-
+        $(".balance-container").addClass("not-context")
 
         $(".current-balance-container-label").text($(this).find(".accountLabel").text())
         $(".address-view").html($(this).parent())
@@ -2825,9 +2825,9 @@ function popLoginModalSelection() {
             label: 'New Account',
             cssClass: 'btn-primary btn-lg login-newaccount',
             action: function (dialogItself) {
-                //popLoginPasswordModal()
-                //dialogItself.close()
-                popMsg("New account creation is temporarily closed.")
+                popLoginPasswordModal()
+                dialogItself.close()
+                //popMsg("New account creation is temporarily closed.")
             }
         }
         

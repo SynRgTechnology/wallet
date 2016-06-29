@@ -14,6 +14,199 @@
 	font-style: normal;
 }
 
+/*REBRAND*/
+.bootstrap-dialog .modal-header, .panel-primary > .panel-heading {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    height: 65px;
+}
+
+.bootstrap-dialog .bootstrap-dialog-title, .panel-title {
+    color: #03a9f4 !important;
+    display: inline-block;
+    font-size: 26px !important;
+    font-family: Raleway-thin !important;
+    font-weight: bold;
+    top: 32px;
+    position: absolute;
+}
+
+.bootstrap-dialog.type-primary .modal-header, .panel-primary > .panel-heading {
+    background-color: #3b3f40 !important;
+}
+
+.modal-content, .panel-body, .popover-content { 
+	background-color: #616261;
+}
+
+.popover-content {
+    color: #ccc;
+}
+
+body {
+    color: #ffc107;
+    background-color:#272822 !important;
+    overflow-x: hidden;
+}
+
+#header.navbar, .coinName {
+    color: #03a9f4 !important;
+    background-color: #3b3f40 !important;
+    border-bottom-width: 0px !important;
+    font-family: Raleway-thin !important;
+    font-weight: bold;
+}
+
+.coinName {
+    position: absolute;
+    left: 80px;
+    top: 14px;
+    background-color: transparent !important;
+    z-index: 3;
+    font-size: xx-large;
+    font-family: Raleway-thin !important;
+    font-weight: bold;
+}
+
+.btn-primary:not(.btn-link):not(.btn-flat) {
+    background-color: #3b3f40 !important;
+    color: #ccc;
+}
+
+.panel-heading.disabled {
+    background-color: #000 !important;
+}
+
+.togglebutton label input[type=checkbox]:checked+.toggle:after, .togglebutton-default label input[type=checkbox]:checked+.toggle:after {
+  background-color: #000;
+}
+
+a .fa {
+    color: #fff !important;
+}
+
+.canvas {
+    background-color: transparent !important;
+    position: inherit !important;
+    left: 0 !important;
+    z-index: 2 !important;
+    min-height: 100% !important;
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+.navmenu-top, .popover-title {
+    background-color: #3b3f40 !important;
+}
+
+.navmenu, .navbar-offcanvas {
+    border-width: 0px !important;
+    background-color: #606160 !important;
+}
+
+.navmenu-top {
+    background-color: #3b3f40 !important;
+    position: fixed;
+    height: 105px;
+    width: 60px;
+}
+
+.navmenu-bottom {
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    z-index: 3;
+    top: 105px;
+}
+
+.navmenu {
+  z-index: 1;
+  background: transparent;
+  overflow: hidden !important;
+  /*overflow-x: hidden;*/
+}
+
+.coinSelectMenuContainer {
+     z-index: 102;
+     background-color: #3b3f40;
+}
+
+
+.coin-menu {
+    margin-bottom: 5px;
+    position: absolute;
+    width: 300px !important;
+    background-color: #3b3f40;
+    z-index: 50;
+}
+
+.popover {
+    border: 0px solid #ccc !important;
+    border: 0px solid rgba(0, 0, 0, 0.2) !important;
+}
+
+.toolTip {
+    position: fixed;
+    width: 350px;
+    z-index: 3;
+    color: #03a9f4
+}
+
+.amount {
+  height: 75px;
+  font-size: 2em;
+  text-align: center;
+  font-size: 3em;
+  color: #93dbfb;
+}
+
+.amount-label {
+  vertical-align: middle;
+  top: 23px;
+  position: absolute;
+}
+.balance-container-label {
+    left: 40px;
+    position: relative;
+}
+.balance-container, .accountInHeadBalance {
+    text-align: center;
+    font-size: 3.4vw !important;
+    left: 40px;
+    position: relative;
+    color: #93dbfb !important;
+    font-family: Raleway-thin;
+    font-variant: small-caps;
+}
+
+.not-context {
+    color: rgba(147, 219, 251, 0.21) !important;
+}
+
+/* Wallet Section Title */
+.wallet-section-title {
+    font-size: 2em;
+    color: #93dbfb;
+}
+
+.qrButton .glyphicon-qrcode {
+    color: #fff !important;
+}
+
+.qrScanButton .glyphicon-facetime-video {
+    color: #fff !important;
+}
+
+.form-control:focus , .form-group .form-control:focus{
+    background-image: linear-gradient(#ffc107, #ffc107), linear-gradient(#d2d2d2, #d2d2d2) !important;
+}
+
+.form-control {
+    color: #acd6f7 !important;
+}
+
+/*REBRAND*/
+
 ul {
     list-style-type: none !important;
 }
@@ -75,13 +268,6 @@ button .addressItem .accountInPickerBalance {
     /*visibility: collapse;*/
 }
 
-/* Wallet Section Title */
-.wallet-section-title {
-    font-size: 2em;
-    color: #26C281;
-}
-
-
 /* Wallet To Image */
 .toImage {
     display: none;
@@ -94,7 +280,7 @@ button .addressItem .accountInPickerBalance {
 
 /* Receiving Panel */
 .send-panel {
-    border-right: #26C281;
+    border-right: #3a3e3f;
     border-right-width: 2px;
     border-right-style: inset;
 }
@@ -170,7 +356,7 @@ button .addressItem .accountInPickerBalance {
 }
 /* SPLASH */
 .bg-green {
-        background-color: #26C281 !important;
+        background-color: #272822 !important;
         color: #FFFFFF !important;
     }
     .splash {
@@ -455,11 +641,6 @@ div, li, ol, section, header, p {
     font-family: Raleway;
 }
 
-body {
-	background-color:#ffffff;
-    overflow-x: hidden;
-}
-
 .advanced {
     display: none !important;
 }
@@ -530,12 +711,6 @@ iframe {
     overflow: hidden;
 }
 
-.toolTip {
-    position: fixed;
-    width: 350px;
-    z-index: 3;
-}
-
 /* QR Scanner */
 .qrButton {
   font-size: 2em;
@@ -573,10 +748,6 @@ iframe {
     color: #26C281 !important;
 }
 
-.qrButton .glyphicon-qrcode {
-    color: #26C281 !important;
-}
-
 .qrScanButton {
   font-size: 2em;
   position: absolute !important;
@@ -586,9 +757,7 @@ iframe {
   padding-bottom: 1px;
 }
 
-.qrScanButton .glyphicon-facetime-video {
-    color: #26C281 !important;
-}
+
 
 .nav-tabs {
   display: none !important;
@@ -599,44 +768,8 @@ iframe {
   width: 300px;
 }
 
-.panel-heading.disabled {
-    background-color: rgba(38, 194, 129, 0.3) !important;
-}
-
-.togglebutton label input[type=checkbox]:checked+.toggle:after, .togglebutton-default label input[type=checkbox]:checked+.toggle:after {
-  background-color: #26C281;
-}
-
-.panel-primary > .panel-heading {
-  background-color: #26C281;
-}
-
 .balance {
     /*padding-left: 60px;*/
-}
-
-.navmenu-top {
-    background-color: #26C281 !important;
-    position: fixed;
-    height: 105px;
-    z-index: 3;
-    width: 60px;
-}
-
-.navmenu-bottom {
-    background-color: #D2D7D3;
-    position: fixed;
-    height: 100%;
-    width: 60px;
-    z-index: 3;
-    top: 105px;
-}
-
-.navmenu {
-  z-index: 1;
-  background: transparent;
-  overflow: hidden !important;
-  /*overflow-x: hidden;*/
 }
 
 .dropdown-menu .itemAddress {
@@ -729,15 +862,6 @@ iframe {
     margin-left: 1px;
 }
 
-.coin-menu {
-    margin-bottom: 5px;
-   /* margin-left: 2px;*/
-    position: absolute;
-    width: 300px !important;
-    background-color: #26C281;
-    z-index: 50;
-}
-
 .logo:hover {
   
   /*background-image: url(../images/SVG/ribbit-transparent.svg);*/
@@ -792,35 +916,6 @@ li.active a, li.active a:hover {
 li a:not(.active) {
     color: grey !important;
 }
-
-.amount {
-  height: 75px;
-  font-size: 2em;
-  text-align: center;
-  font-size: 3em;
-  color: #26C281;
-}
-
-.amount-label {
-  vertical-align: middle;
-  top: 23px;
-  position: absolute;
-}
-.balance-container-label {
-    left: 40px;
-    position: relative;
-}
-.balance-container, .accountInHeadBalance {
-    text-align: center;
-    font-size: 3.4vw !important;
-    left: 40px;
-    position: relative;
-    color: #26C281;
-    font-family: Raleway-thin;
-    font-variant: small-caps;
-}
-
-
 
 li .accountInPicker {
   padding: 5px;
@@ -903,16 +998,11 @@ position: absolute;
 .dropdown-menu a {
     color: gray !important;
 }
-.btn-primary:not(.btn-link):not(.btn-flat) {
-    background-color: #26c281 !important;
-    color: rgba(255, 255, 255, 0.84);
-}
+
 .form-group .control-label, .form-group-default .control-label, .btn-default {
     color: gray !important;
 }
-body {
-    color: gray;
-}
+
 .wallet-address-picker {
     /*box-shadow: none;*/
     width: 100%;
@@ -966,11 +1056,6 @@ body {
 
 .dropdown-menu a {
     color: gray !important;
-}
-
-.btn-primary:not(.btn-link):not(.btn-flat) {
-    background-color: #26c281 !important;
-    color: rgba(255, 255, 255, 0.84);
 }
 
 .form-group .control-label, .form-group-default .control-label, .btn-default {
@@ -1065,14 +1150,6 @@ body {
   left: 0px !important;
   right: auto;
   bottom: 0;
-}
-
-.coinName {
-    position: absolute;
-    left: 80px;
-    top: 5px;
-    z-index: 3;
-    font-size: xx-large;
 }
 
 .buyCoinButton {
