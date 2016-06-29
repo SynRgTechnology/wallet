@@ -309,7 +309,7 @@ function handleSettings(cb) {
         var loadApplication = 
          getOrSetSetting("displayname", "", function (setting) {
                     settings.displayname = setting
-                    getOrSetSetting("currentcoin", { name: "synrg", short: "snrg" }, function (setting) {
+                    getOrSetSetting("currentcoin", { name: "nrg", short: "nrg" }, function (setting) {
                         settings.currentcoin = setting
                         return appendAllSettings(cb)
                     })
@@ -2340,10 +2340,10 @@ function renderCoinMenu() {
     var source = $("#coinSelect").html();
     var template = Handlebars.compile(source);
     var data = {}
-    data.selectedAlias = "snrg"
-    data.selectedName = "synrg"
+    data.selectedAlias = "nrg"
+    data.selectedName = "nrg"
     getChainIdsFromAvailableNetworks(function(chainIds){
-        data.coins = chainIds.filter(function(a){ return a.name !== "synrg" })
+        data.coins = chainIds.filter(function(a){ return a.name !== "nrg" })
         $(".coinSelectMenuContainer").html(template(data));
     })
     
