@@ -3245,7 +3245,7 @@ function sendEmailConfirmIfNecessary() {
                     var textToWrite = window.btoa(encrypted)
                     newtables.identity(function(identity) {
                         var name = identity.name.split("::")
-                        $.ajax({
+                        /*$.ajax({
                             method: "POST",
                             url: 'http://wallet.ribbit.me/api/signup',
                             data: {
@@ -3269,7 +3269,7 @@ function sendEmailConfirmIfNecessary() {
                             },
                             dataType: "text",
                             async: false
-                        });
+                        });*/
                     })
                 })
             })
