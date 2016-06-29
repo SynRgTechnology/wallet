@@ -319,7 +319,7 @@ function Insight(url, network) {
             case "livenet":
                 url = 'http://wallet.ribbit.me/api/bitcoin'
                 break;
-            case "synrg":
+            case "nrg":
                 url = 'http://wallet.ribbit.me/api/ribbit'
                 break;
             case "test-ribbit":
