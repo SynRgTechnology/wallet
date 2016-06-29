@@ -1206,7 +1206,7 @@ function bindClicks() {
                     me.password = $("#passwordExportInput").val() || $("#passwordExportModalInput").val()
                     var textToWrite = encrypted
                     var textFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
-                    var fileNameToSaveAs = "Ribbit.me-Full-Account-Backup.txt"
+                    var fileNameToSaveAs = "synrg.tech-Full-Account-Backup.txt"
 
                     var downloadLink = document.createElement("a");
                     downloadLink.download = fileNameToSaveAs;
@@ -1254,7 +1254,7 @@ function bindClicks() {
         newtables.exportEncrypted($("#passwordExportInput").val(), function (encrypted) {
             var textToWrite = encrypted
             var textFileAsBlob = new Blob([textToWrite], { type: 'text/plain' });
-            var fileNameToSaveAs = "Ribbit.me-Full-Account-Backup.txt"
+            var fileNameToSaveAs = "synrg.tech-cloud-Full-Account-Backup.txt"
             
             var downloadLink = document.createElement("a");
             downloadLink.download = fileNameToSaveAs;
@@ -2340,10 +2340,10 @@ function renderCoinMenu() {
     var source = $("#coinSelect").html();
     var template = Handlebars.compile(source);
     var data = {}
-    data.selectedAlias = "rbr"
-    data.selectedName = "ribbit"
+    data.selectedAlias = "snrg"
+    data.selectedName = "synrg"
     getChainIdsFromAvailableNetworks(function(chainIds){
-        data.coins = chainIds.filter(function(a){ return a.name !== "ribbit" })
+        data.coins = chainIds.filter(function(a){ return a.name !== "synrg" })
         $(".coinSelectMenuContainer").html(template(data));
     })
     

@@ -160,8 +160,8 @@ Networks.add({
 
 
 Networks.add({
-    name: "ribbit",
-    alias: "rbr",
+    name: "synrg",
+    alias: "snrg",
     pubkeyhash: 61,
     privatekey: 0xbd,
     scripthash: 123,
@@ -243,7 +243,7 @@ Networks.add({
         return fees
     }
 
-Networks.AvailableNetworks.push({ name: "ribbit", alias: "rbr", display: "Ribbit Rewards", fees: defaultFees, insight: new Insight("ribbit") })
+Networks.AvailableNetworks.push({ name: "synrg", alias: "snrg", display: "synRg Vouchers", fees: defaultFees, insight: new Insight("synrg") })
 //Networks.AvailableNetworks.push({ name: "test-ribbit", fees: defaultFees, insight: new Insight("test-ribbit") })
 Networks.AvailableNetworks.push({ name: "bitcoin", alias: "btc", display: "Bitcoin", fees: defaultFees, insight: new Insight("https://insight.bitpay.com") })
 Networks.AvailableNetworks.push({ name: "franko", alias: "frk", display: "Franko", fees: defaultFees, insight: new Insight("franko") })
@@ -255,8 +255,8 @@ Networks.AvailableNetworks.push({ name: "litecoin", alias: "ltc", display: "Lite
 Networks.AvailableNetworks.push({ name: "digibyte", alias: "dgb", display: "Digibyte", fees: defaultFees, insight: new Insight("digibyte") })
 Networks.AvailableNetworks.push({ name: "ethereum", alias: "eth", display: "Ethereum", fees: defaultFees, insight: new Insight("ethereum") })
 
-Networks.defaultNetwork = bitcore.Networks.get("ribbit")
-Networks.livenet = bitcore.Networks.get("ribbit")
+Networks.defaultNetwork = bitcore.Networks.get("synrg")
+Networks.livenet = bitcore.Networks.get("synrg")
 
 Networks.AvailableNetworks.currentNetwork = function () {
     var currentNet = Networks.defaultNetwork.name;
@@ -319,7 +319,7 @@ function Insight(url, network) {
             case "livenet":
                 url = 'http://wallet.ribbit.me/api/bitcoin'
                 break;
-            case "ribbit":
+            case "synrg":
                 url = 'http://wallet.ribbit.me/api/ribbit'
                 break;
             case "test-ribbit":
