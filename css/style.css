@@ -205,6 +205,31 @@ a .fa {
     color: #acd6f7 !important;
 }
 
+.splash-text, .brand {
+    color: #ffc107;
+}
+
+.logo {
+    background-image: url(../images/SVG/SNRG.svg);
+    left: 0;
+    height: 55px;
+    background-size: 55px 55px;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+
+.snrg-logo {
+    position: absolute;
+    top: -105px;
+    z-index: -1;
+}
+
+.snrg-logo img {
+    opacity: 0.3;
+}
+
+
+
 /*REBRAND*/
 
 ul {
@@ -836,15 +861,6 @@ iframe {
     z-index: 2 !important;
     right: 0;
     position: fixed;
-}
-
-.logo {
-  background-image: url(../images/SVG/RBR.svg);
-  left: 0;
-  height: 55px;
-  background-size: 55px 55px;
-  background-repeat: no-repeat;
-  opacity: 0.4;
 }
 
 .coin-sellect {

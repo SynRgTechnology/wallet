@@ -309,7 +309,7 @@ function handleSettings(cb) {
         var loadApplication = 
          getOrSetSetting("displayname", "", function (setting) {
                     settings.displayname = setting
-                    getOrSetSetting("currentcoin", { name: "ribbit", short: "rbr" }, function (setting) {
+                    getOrSetSetting("currentcoin", { name: "synrg", short: "snrg" }, function (setting) {
                         settings.currentcoin = setting
                         return appendAllSettings(cb)
                     })
