@@ -182,7 +182,7 @@ function loadFireComplete(cb) {
         complete()
 
         //Check to see if new user
-        onPage(function (out) {
+        /*onPage(function (out) {
             var cookie = getCookie("newuser-" + out.simple)
             console.log(cookie)
             if (cookie === null || cookie === "true") {
@@ -190,7 +190,7 @@ function loadFireComplete(cb) {
                 setCookie("newuser-" + out.simple, false)
                 setTimeout(function(){$(".help").click()},500)
             } else { }
-        })
+        })*/
     } catch (e) {}
     if (verbose) console.info("Load Complete")
     cb()
@@ -860,11 +860,11 @@ function bindClicks() {
     
     /* Help */
     $(document).on('click.customBindings', '.help', function () {
-        if (multiStageHelp !== undefined && multiStageHelp.step !== undefined) {
+        /*if (multiStageHelp !== undefined && multiStageHelp.step !== undefined) {
             multiStageHelp.step[0]()
         } else {
             $('body').chardinJs('start')
-        }
+        }*/
     })
 
 
@@ -2621,7 +2621,7 @@ function renderDynamicTemplate(page) {
 }
 
 function animateOut(template, cb) {
-    multiStageHelp = {}
+    //multiStageHelp = {}
     $("#frame").children().removeClass("fadeInUp").addClass("fadeOutUp")
     setTimeout(function() {
         $("#frame").html(template)
@@ -2876,7 +2876,7 @@ function popLoginModalSelection() {
                 if (cookie === null || cookie === "true") {
                     console.log("is new")
                     setCookie("newuser-login1", false)
-                    setTimeout(function () { $(".help-button").click() }, 500)
+                    /*setTimeout(function () { $(".help-button").click() }, 500)*/
                 } else { }
                 
             }, 500)
@@ -3057,7 +3057,7 @@ function popLoginPasswordModal(cb) {
                     if (cookie === null || cookie === "true") {
                         console.log("is new")
                         setCookie("newuser-login2b", false)
-                        setTimeout(function () { $(".help-button").click() }, 500)
+                        /*setTimeout(function () { $(".help-button").click() }, 500)*/
                     } else { }
                 }, 500)
             } else {
@@ -3073,7 +3073,7 @@ function popLoginPasswordModal(cb) {
                     if (cookie === null || cookie === "true") {
                         console.log("is new")
                         setCookie("newuser-login2a", false)
-                        setTimeout(function () { $(".help-button").click() }, 500)
+                        /*setTimeout(function () { $(".help-button").click() }, 500)*/
                     } else { }
                 }, 500)
             }
@@ -3410,14 +3410,14 @@ function configureMultiStageHelp(perform, next, delay) {
         perform()
         
         //$(".chardinjs-overlay").html(nextButton)
-        setTimeout(function() {
+        /*setTimeout(function() {
             if (next >= multiStageHelp.step.length) {
                 $('body').chardinJs('stop')
             } else {
                 $('body').chardinJs('stop')
                 multiStageHelp.step[next]()
             }
-        }, delay)
+        }, delay)*/
     }
 }
 
