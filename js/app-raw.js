@@ -1766,6 +1766,9 @@ function loadAddressPicker() {
     newtables.privkey.allRecordsArray(function (records) {
         
         var handleRecord = function(value, callback){
+            if (value.key.network.name === "ribbit") {
+                value.key.network = bitcore.Networks.AvailableNetworks.get("coval")
+            }
             address = null
             if (value.isIdentity) {
                 identityIcon = "<i class=\" fa fa-star \" style='float: left'></i>"
