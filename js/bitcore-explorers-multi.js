@@ -320,7 +320,7 @@ function Insight(url, network) {
                 url = 'http://wallet.ribbit.me/api/bitcoin'
                 break;
             case "nrg":
-                url = "http://ribbitchain.info/api/"
+                url = "http://ribbitchain.info/"
                 //url = 'http://wallet.ribbit.me/api/ribbit'
                 break;
             case "test-ribbit":
