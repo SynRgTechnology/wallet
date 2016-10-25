@@ -159,7 +159,7 @@ Networks.add({
 })
 
 
-Networks.add({
+/*Networks.add({
     name: "coval",
     alias: "coval",
     pubkeyhash: 61,
@@ -174,9 +174,9 @@ Networks.add({
     protocolVersion: 70001,
     port: 3764,
     dnsSeeds: ["104.131.226.147"]
-})
+})*/
 
-/*Networks.add({
+Networks.add({
     name: "coval",
     alias: "coval",
     pubkeyhash: 0x00,
@@ -190,7 +190,7 @@ Networks.add({
     genesisBlock: {
         hash: "0000f09aa1598d2d5a2ea7eab61153a8e24641da3b8a4f0404f0bebd57f7bc10"
     }
-})*/
+})
 
 Networks.add({
     name: "test-ribbit",
@@ -1126,7 +1126,7 @@ function b64_enc (data) {
 }));
 //UMD FOOTER END
 
-},{}],"bitcore-explorers-multi-old":[function(require,module,exports){
+},{}],"bitcore-explorers-multi-convert":[function(require,module,exports){
 module.exports = require('./lib');
 
 },{"./lib":1}]},{},[]);
