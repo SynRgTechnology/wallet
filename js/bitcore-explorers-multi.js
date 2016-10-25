@@ -160,8 +160,8 @@ Networks.add({
 
 
 Networks.add({
-    name: "nrg",
-    alias: "nrg",
+    name: "coval",
+    alias: "coval",
     pubkeyhash: 61,
     privatekey: 0xbd,
     scripthash: 123,
@@ -175,6 +175,22 @@ Networks.add({
     port: 3764,
     dnsSeeds: ["104.131.226.147"]
 })
+
+/*Networks.add({
+    name: "coval",
+    alias: "coval",
+    pubkeyhash: 0x00,
+    privatekey: 0x80,
+    scripthash: 0x05,
+    xpubkey: 0x0488b21e,
+    xprivkey: 0x0488ade4,
+    networkMagic: 0xf9beb4d9,
+    port: 3764,
+    protocolVersion: 70002,
+    genesisBlock: {
+        hash: "0000f09aa1598d2d5a2ea7eab61153a8e24641da3b8a4f0404f0bebd57f7bc10"
+    }
+})*/
 
 Networks.add({
     name: "test-ribbit",
@@ -243,20 +259,20 @@ Networks.add({
         return fees
     }
 
-Networks.AvailableNetworks.push({ name: "nrg", alias: "nrg", display: "nRg Vouchers", fees: defaultFees, insight: new Insight("nrg") })
+Networks.AvailableNetworks.push({ name: "coval", alias: "coval", display: "Circuits of Value", fees: defaultFees, insight: new Insight("coval") })
 //Networks.AvailableNetworks.push({ name: "test-ribbit", fees: defaultFees, insight: new Insight("test-ribbit") })
 Networks.AvailableNetworks.push({ name: "bitcoin", alias: "btc", display: "Bitcoin", fees: defaultFees, insight: new Insight("https://insight.bitpay.com") })
-Networks.AvailableNetworks.push({ name: "franko", alias: "frk", display: "Franko", fees: defaultFees, insight: new Insight("franko") })
-Networks.AvailableNetworks.push({ name: "defcoin", alias: "dfc", display: "Defcoin", fees: defaultFees, insight: new Insight("defcoin") })
-Networks.AvailableNetworks.push({ name: "dash", alias: "dash", display: "Dash", fees: defaultFees, insight: new Insight("dash") })
+//Networks.AvailableNetworks.push({ name: "franko", alias: "frk", display: "Franko", fees: defaultFees, insight: new Insight("franko") })
+//Networks.AvailableNetworks.push({ name: "defcoin", alias: "dfc", display: "Defcoin", fees: defaultFees, insight: new Insight("defcoin") })
+//Networks.AvailableNetworks.push({ name: "dash", alias: "dash", display: "Dash", fees: defaultFees, insight: new Insight("dash") })
 //Networks.AvailableNetworks.push({ name: "neucoin", fees: defaultFees, insight: new Insight("neucoin") })
 //Networks.AvailableNetworks.push({ name: "dogecoin", fees: defaultFees, insight: new Insight("dogecoin") })
-Networks.AvailableNetworks.push({ name: "litecoin", alias: "ltc", display: "Litecoin", fees: getLitecoinFees(), insight: new Insight("litecoin") })
+//Networks.AvailableNetworks.push({ name: "litecoin", alias: "ltc", display: "Litecoin", fees: getLitecoinFees(), insight: new Insight("litecoin") })
 Networks.AvailableNetworks.push({ name: "digibyte", alias: "dgb", display: "Digibyte", fees: defaultFees, insight: new Insight("digibyte") })
-Networks.AvailableNetworks.push({ name: "ethereum", alias: "eth", display: "Ethereum", fees: defaultFees, insight: new Insight("ethereum") })
+//Networks.AvailableNetworks.push({ name: "ethereum", alias: "eth", display: "Ethereum", fees: defaultFees, insight: new Insight("ethereum") })
 
-Networks.defaultNetwork = bitcore.Networks.get("nrg")
-Networks.livenet = bitcore.Networks.get("nrg")
+Networks.defaultNetwork = bitcore.Networks.get("coval")
+Networks.livenet = bitcore.Networks.get("coval")
 
 Networks.AvailableNetworks.currentNetwork = function () {
     var currentNet = Networks.defaultNetwork.name;
@@ -319,7 +335,7 @@ function Insight(url, network) {
             case "livenet":
                 url = 'http://wallet.ribbit.me/api/bitcoin'
                 break;
-            case "nrg":
+            case "coval":
                 url = "http://ribbitchain.info/"
                 //url = 'http://wallet.ribbit.me/api/ribbit'
                 break;
