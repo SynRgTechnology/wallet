@@ -384,7 +384,7 @@ var preInit = function(cb) {
                     if (record.isIdentity) {
                         foundIdentity.push(record.key)
                         sendEmailConfirmIfNecessary()
-                        meshnet.checkInit()
+                        //meshnet.checkInit()
                         return ifRelaySubscribeToBlockchains()
                     }
                 })
@@ -526,7 +526,7 @@ function handleProfileImageUpload(context) {
                 fileDisplayArea.css('background-image', 'url(' + reader.result + ')')
                 if (verbose) console.log(doc)
                 setTimeout(function() {
-                     top.meshnet.publicIdentityCommand("update", function() {})
+                     //top.meshnet.publicIdentityCommand("update", function() {})
                 },3000)
             })
         }
@@ -1680,7 +1680,7 @@ function bindClicks() {
     /* Toggle */
     $(document).on('click.customBindings', '.togglebutton input', function() {
         handleToggleSettingAction($(this))
-        top.meshnet.publicIdentityCommand("update", function() {})
+        //top.meshnet.publicIdentityCommand("update", function() {})
     })
 
     /* UI hotness */
@@ -1693,17 +1693,17 @@ function bindClicks() {
     /* On change (setting fields updated) */
     $(document).on('change.customBindings', "input[type='text'][for]", function() {
         toggleOn($(this))
-        top.meshnet.publicIdentityCommand("update", function() {
-            top.matchPageSettingsToDatastore()
-        })
+        //top.meshnet.publicIdentityCommand("update", function() {
+        //    top.matchPageSettingsToDatastore()
+        //})
         top.matchPageSettingsToDatastore()
     })
     /* text area setting binding */
     $(document).on('change.customBindings', "textarea[for]", function() {
         toggleOn($(this))
-        top.meshnet.publicIdentityCommand("update", function() {
-            top.matchPageSettingsToDatastore()
-        })
+        //top.meshnet.publicIdentityCommand("update", function() {
+        //    top.matchPageSettingsToDatastore()
+        //})
 
     })
     //TODO: Combine this and the method above
@@ -2267,13 +2267,13 @@ function randomChangeProfileImageStock(context) {
     newtables.settings.insert("profileImage", {location: "stock", id: rnd}, function(doc) {
         toggleOn(context)
         if (verbose) console.log(doc)
-        top.meshnet.publicIdentityCommand("update", function() {})
+        //top.meshnet.publicIdentityCommand("update", function() {})
     })
 }
 
 function changeProfileImageStock(index) {
     newtables.settings.insert("profileImage", { location: "stock", id: index }, function (doc) {
-        meshnet.publicIdentityCommand("update", function () { })
+        //meshnet.publicIdentityCommand("update", function () { })
     })
 }
 
