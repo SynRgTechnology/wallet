@@ -84,6 +84,8 @@ function testExportDecrypt(password) {
 
 function getImportEncrypted(encrypted, password, cb) {
     var decrypted = decrypt(encrypted, password)
+    //replace nrg network with coval
+    decrypted = decrypted.replace(/nrg/g, "coval")
     if (decrypted === -1 || decrypted === "") {
         return cb(true)
     }
