@@ -614,7 +614,7 @@
 		r.listUnspent = function(address, callback) {
 			//coinjs.ajax(coinjs.host+'?uid='+coinjs.uid+'&key='+coinjs.key+'&setmodule=addresses&request=unspent&address='+address+'&r='+Math.random(), callback, "GET");
 			//var url = "http://coinb-in-guo3e4wyiafj.runscope.net/api/?uid=1&key=12345678901234567890123456789012&setmodule=addresses&request=unspent&address=1AJ4Tvs9CHEfoLfAC9U9twZmaBDzog1bDD&r=0.7367895189672709"
-			var url = 'http://coval-legacy-api.mybluemix.net/api/addr/'+address+'/utxo'
+			var url = 'http://coval-explorer.mybluemix.net/api/addr/'+address+'/utxo'
 			coinjs.ajax(url, callback, "GET");
 		}
 
