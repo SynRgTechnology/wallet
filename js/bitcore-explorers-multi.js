@@ -336,7 +336,7 @@ function Insight(url, network) {
                 url = 'http://wallet.ribbit.me/api/bitcoin'
                 break;
             case "coval":
-                url = "http://169.44.127.193:3027/"
+                url = "http://169.44.127.193:3027"
                 //url = 'http://wallet.ribbit.me/api/ribbit'
                 break;
             case "test-ribbit":
