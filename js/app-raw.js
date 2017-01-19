@@ -78,6 +78,7 @@ var onPage = function (cb) {
 
 /* Entry */
 $(document).ready(function () {
+    
     /*oldconsole = window.console
     function customLog(msg) {
        oldconsole.log(msg)

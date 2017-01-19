@@ -8571,7 +8571,7 @@ module.exports = function (signalhost, opts, callback) {
                     // then tweak the primus prototype
                     if (anchor.pathname !== '/') {
                         Primus.prototype.pathname = anchor.pathname.replace(reTrailingSlash, '') +
-        Primus.prototype.pathname;
+                        Primus.prototype.pathname;
                     }
                     
                     callback(null, Primus);
